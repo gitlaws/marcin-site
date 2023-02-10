@@ -39,7 +39,7 @@
       padding-left: 40px;
       padding-right: 40px;
       display: grid;
-      grid-gap: 10px;
+      grid-gap: 20px;
 
       h2 {
         text-transform: uppercase;
@@ -61,7 +61,7 @@
       }
 
       #youtube {
-        border-radius: 30px;
+        border-radius: 20px;
         background-color: $secondary-background;
         padding: 30px 20px;
         display: grid;
@@ -87,7 +87,7 @@
       }
 
       #self-taught-or-not {
-        border-radius: 30px;
+        border-radius: 20px;
         background-color: $secondary-background;
         padding: 30px 20px;
         display: grid;
@@ -110,7 +110,7 @@
       }
 
       #courses {
-        border-radius: 30px;
+        border-radius: 20px;
         background-color: $secondary-background;
         padding: 30px 20px;
         display: grid;
