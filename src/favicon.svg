@@ -2,6 +2,7 @@
   <style>
     circle {
       fill: #1e1e1e;
+      
     }
 
     text {
@@ -11,7 +12,7 @@
 
     @media (prefers-color-scheme: dark) {
       circle {
-        fill: white;
+        fill: #2cb67d;
       }
 
       text {
@@ -21,5 +22,5 @@
   </style>
 
   <circle cx="62.5" cy="62.5" r="50" />
-  <text x="50%" y="50%" text-anchor="middle" font-size="60px" font-family="Arial" dy=".3em">DI</text>
+  <text x="50%" y="50%" text-anchor="middle" font-size="60px" font-family="Arial" dy=".3em">M</text>
 </svg>
