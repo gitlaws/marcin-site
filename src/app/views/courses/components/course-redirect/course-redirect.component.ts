@@ -1,16 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { CouponCodeService } from '../../services/coupon-code/coupon-code.service';
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
+import { CouponCodeService } from "../../services/coupon-code/coupon-code.service";
 
 @Component({
-  selector: 'app-course-redirect',
-  templateUrl: './course-redirect.component.html',
-  styleUrls: ['./course-redirect.component.scss']
+  selector: "app-course-redirect",
+  templateUrl: "./course-redirect.component.html",
+  styleUrls: ["./course-redirect.component.scss"],
 })
 export class CourseRedirectComponent implements OnInit {
-  public courses: { courseKey: string, urlTitle: string }[] = [];
+  public courses: { courseKey: string; urlTitle: string }[] = [];
 
-  constructor(private route: ActivatedRoute, private couponCodeService: CouponCodeService) {
+  constructor(
+    private route: ActivatedRoute,
+    private couponCodeService: CouponCodeService
+  ) {
     this.courses = this.couponCodeService.courses;
   }
 
@@ -29,7 +32,6 @@ export class CourseRedirectComponent implements OnInit {
   }
 
   public redirectIfValidCourse(courseQueryString: string): void {
-
     for (const course of this.couponCodeService.courses) {
       if (course.courseKey === courseQueryString) {
         this.redirectByCourse(course);
@@ -38,7 +40,11 @@ export class CourseRedirectComponent implements OnInit {
     }
   }
 
-  private redirectByCourse(course: { courseKey: string, urlTitle: string, url?: string }) {
+  private redirectByCourse(course: {
+    courseKey: string;
+    urlTitle: string;
+    url?: string;
+  }) {
     window.location.href = course.url;
   }
 }
