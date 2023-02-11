@@ -6,8 +6,8 @@ footer {
 
   .social-media-container {
     display: grid;
-    // grid-gap: 10px;
-    // grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    grid-template-columns: 1fr auto;
     align-items: center;
     background-color: $green;
     color: #fffffe;
@@ -28,7 +28,7 @@ footer {
 
       li {
         font-size: 2em;
-        // padding: 6px;
+        padding: 6px;
         border-radius: 50%;
         height: 48px;
         width: 48px;
