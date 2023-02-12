@@ -9,7 +9,7 @@ import { CouponCodeService } from "./services/coupon-code/coupon-code.service";
 })
 export class CoursesComponent {
   public courses: Course[] = [];
-  // public currentMonthsCode = this.couponCodeService.currentCode;
+  public currentMonthsCode = this.couponCodeService.currentCode;
 
   constructor(private couponCodeService: CouponCodeService) {
     this.courses = this.couponCodeService.courses;
