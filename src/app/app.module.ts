@@ -12,6 +12,7 @@ import { CourseRedirectComponent } from "./views/courses/components/course-redir
 import { CoursesComponent } from "./views/courses/courses.component";
 import { EmailSignupComponent } from "./views/home/components/email-signup/email-signup.component";
 import { HomeComponent } from "./views/home/home.component";
+import { SkillsComponent } from './views/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HomeComponent } from "./views/home/home.component";
     TopOfPageComponent,
     FooterComponent,
     GithubComponent,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,

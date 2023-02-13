@@ -1,0 +1,26 @@
+#skills {
+  color: white;
+
+  h3 {
+    text-align: center;
+    justify-self: center;
+  }
+}
+
+.grid {
+  display: grid;
+  color: white;
+  list-style: none;
+  font-size: 12em;
+  padding: 0;
+
+  ul,
+  li {
+    text-align: center;
+    justify-self: center;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+}
