@@ -1,26 +1,44 @@
+@import "src/styles/breakPoints";
+
 #skills {
   color: white;
 
   h3 {
     text-align: center;
     justify-self: center;
+    margin-top: 20px;
   }
-}
 
-.grid {
-  display: grid;
-  color: white;
-  list-style: none;
-  font-size: 12em;
-  padding: 0;
+  h4 {
+    font-size: 12px;
+  }
 
   ul,
   li {
     text-align: center;
     justify-self: center;
   }
+}
 
-  h4 {
-    font-size: 12px;
+.skills-container {
+  // background-color: darkslateblue;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  padding: 40px;
+
+  .zone {
+    text-align: center;
+    font-size: 6em;
+    border-radius: 4px;
+    // border: 1px solid #bbb;
+    transition: all 0.3s linear;
   }
+
+  // @media screen and (max-width: $tablet) {
+  //   grid-gap: 20px;
+  //   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  //   grid-template-rows: 1fr auto;
+  // }
 }
