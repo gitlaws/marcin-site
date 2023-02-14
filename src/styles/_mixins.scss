@@ -21,6 +21,90 @@
   animation: gradient 15s ease infinite;
 }
 
+@mixin linear-gradient-angular($angular-red, $angular-white) {
+  background-image: linear-gradient(to right, $angular-red, $angular-white);
+  background-size: 600% 100%;
+  animation: gradient 15s ease infinite;
+}
+
+@mixin linear-gradient-node(
+  $node-dark-charcoal,
+  $node-russian-green,
+  $node-may-green
+) {
+  background-image: linear-gradient(
+    to right,
+    $node-dark-charcoal,
+    $node-russian-green,
+    $node-may-green
+  );
+  background-size: 600% 100%;
+  animation: gradient 15s ease infinite;
+}
+
+@mixin linear-gradient-html(
+  $html-darkorang: #e34c26,
+  $html-lightorange: #f06529,
+  $html-lightgrey: #ebebeb,
+  $html-white: #ffffff,
+  $html-black: #000000
+) {
+  background-image: linear-gradient(
+    to right,
+    $html-darkorang: #e34c26,
+    $html-lightorange: #f06529,
+    $html-lightgrey: #ebebeb,
+    $html-white: #ffffff,
+    $html-black: #000000
+  );
+  background-size: 600% 100%;
+  animation: gradient 15s ease infinite;
+}
+
+@mixin linear-gradient-css(
+  $css-darkblue: #264de4,
+  $css-lightblue: #2965f1,
+  $css-lightgrey: #ebebeb,
+  $css-white: #ffffff,
+  $css-black: #000000
+) {
+  background-image: linear-gradient(to right);
+  background-size: 600% 100%;
+  animation: gradient 15s ease infinite;
+}
+
+@mixin linear-gradient-sass(
+  $bright-pink: #cd6799,
+  $darker-pink: #cf649a,
+  $deep-purple: #a53c6c,
+  $lighter-purple: #c6538c
+) {
+  background-image: linear-gradient(
+    to right,
+    $bright-pink: #cd6799,
+    $darker-pink: #cf649a,
+    $deep-purple: #a53c6c,
+    $lighter-purple: #c6538c
+  );
+  background-size: 600% 100%;
+  animation: gradient 15s ease infinite;
+}
+
+@mixin linear-gradient-github(
+  $github-black: #24292e,
+  $github-white: #ffffff,
+  $github-red: #c83d2d
+) {
+  background-image: linear-gradient(
+    to right,
+    $github-black: #24292e,
+    $github-white: #ffffff,
+    $github-red: #c83d2d
+  );
+  background-size: 600% 100%;
+  animation: gradient 15s ease infinite;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0 50%;
