@@ -1,5 +1,6 @@
 @import "src/styles/breakPoints";
 @import "src/styles/colors";
+@import "/src/styles/mixins";
 
 #skills {
   color: $quaternary-background;
@@ -28,6 +29,7 @@
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: 1fr;
   padding: 40px;
+  @include linear-gradient($color1, $color2, $color3, $color4);
 
   .zone {
     text-align: center;
