@@ -1,7 +1,8 @@
 @import "src/styles/breakPoints";
+@import "src/styles/colors";
 
 #skills {
-  color: white;
+  color: $quaternary-background;
 
   h3 {
     text-align: center;
