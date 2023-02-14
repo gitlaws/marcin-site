@@ -23,20 +23,11 @@
 }
 
 .skills-container {
-  // background-color: darkslateblue;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: 1fr;
   padding: 40px;
-  // @include linear-gradient(
-  //   $color1,
-  //   $color2,
-  //   $color3,
-  //   $color4,
-  //   $color5,
-  //   $color6
-  // );
 
   @include linear-gradient(
     $color1,
@@ -54,10 +45,4 @@
     // border: 1px solid #bbb;
     transition: all 0.3s linear;
   }
-
-  // @media screen and (max-width: $tablet) {
-  //   grid-gap: 20px;
-  //   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  //   grid-template-rows: 1fr auto;
-  // }
 }
