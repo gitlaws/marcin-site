@@ -3,29 +3,11 @@
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-// @mixin linear-gradient($color1, $color2, $color3, $color4, $color5, $color6) {
-//   background: linear-gradient(to right, $color1, $color2, $color3, $color4);
-// } ;
-
-// @mixin linear-gradient($color1, $color2, $color3, $color4, $color5, $color6) {
-//   background-image: linear-gradient(
-//     to right,
-//     $color1,
-//     $color2,
-//     $color3,
-//     $color4,
-//     $color5,
-//     $color6
-//   );
-//   background-size: 600% 100%;
-//   animation: gradient 15s ease infinite;
-// }
-
 @mixin linear-gradient-angular {
   // color: #ff0066;
-  animation: color-pulse 15s ease infinite alternate;
+  animation: color-angular 15s ease infinite alternate;
 
-  @keyframes color-pulse {
+  @keyframes color-angular {
     0% {
       color: $angular-red;
     }
@@ -38,9 +20,9 @@
 
 @mixin linear-gradient-node {
   // color: #ff0066;
-  animation: color-pulse 15s ease infinite alternate;
+  animation: color-node 15s ease infinite alternate;
 
-  @keyframes color-pulse {
+  @keyframes color-node {
     0% {
       color: $node-dark-charcoal;
     }
@@ -57,9 +39,8 @@
 
 @mixin linear-gradient-html {
   // color: #ff0066;
-  animation: color-pulse 15s ease infinite alternate;
-
-  @keyframes color-pulse {
+  animation: color- 15s ease infinite alternate;
+  @keyframes color- {
     0% {
       color: $html-darkorang;
     }
@@ -84,9 +65,8 @@
 
 @mixin linear-gradient-css {
   // color: #ff0066;
-  animation: color-pulse 15s ease infinite alternate;
-
-  @keyframes color-pulse {
+  animation: color-css 15s ease infinite alternate;
+  @keyframes color-css {
     0% {
       color: $angular-red;
     }
@@ -98,31 +78,44 @@
 }
 
 @mixin linear-gradient-sass {
-  // color: #ff0066;
-  animation: color-pulse 15s ease infinite alternate;
-
-  @keyframes color-pulse {
+  animation: color-sass 15s ease infinite alternate;
+  @keyframes color-sass {
     0% {
-      color: $angular-red;
+      color: $css-darkblue;
+    }
+
+    25% {
+      color: $css-lightblue;
+    }
+
+    50% {
+      color: $css-lightgrey;
+    }
+
+    75% {
+      color: $css-white;
     }
 
     100% {
-      color: $angular-white;
+      color: $css-black;
     }
   }
 }
 
 @mixin linear-gradient-github {
   // color: #ff0066;
-  animation: color-pulse 15s ease infinite alternate;
-
-  @keyframes color-pulse {
+  animation: color-github 15s ease infinite alternate;
+  @keyframes color-github {
     0% {
-      color: $angular-red;
+      color: $github-black;
+    }
+
+    50% {
+      color: $github-white;
     }
 
     100% {
-      color: $angular-white;
+      color: $github-red;
     }
   }
 }

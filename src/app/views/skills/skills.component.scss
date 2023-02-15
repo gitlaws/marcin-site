@@ -29,17 +29,6 @@
   grid-template-rows: 1fr;
   padding: 40px;
 
-  // @include linear-gradient(
-  //   $color1,
-  //   $color2,
-  //   $color3,
-  //   $color4,
-  //   $color5,
-  //   $color6
-  // );
-
-  // @include linear-gradient-angular($angular-red, $angular-white);
-
   .zone {
     text-align: center;
     font-size: 6em;
@@ -55,4 +44,26 @@
 }
 
 .fa-node-js {
+  @include linear-gradient-node;
+  font-size: 6em;
+}
+
+.html5 {
+  @include linear-gradient-html;
+  font-size: 6em;
+}
+
+.fa-css3-alt {
+  @include linear-gradient-css;
+  font-size: 6em;
+}
+
+.fa-sass {
+  @include linear-gradient-sass;
+  font-size: 6em;
+}
+
+.fa-gitkraken {
+  @include linear-gradient-github;
+  font-size: 6em;
 }
