@@ -3,7 +3,7 @@
 @import "/src/styles/mixins";
 
 #skills {
-  color: $quaternary-background;
+  // color: $quaternary-background;
 
   h3 {
     text-align: center;
@@ -29,14 +29,16 @@
   grid-template-rows: 1fr;
   padding: 40px;
 
-  @include linear-gradient(
-    $color1,
-    $color2,
-    $color3,
-    $color4,
-    $color5,
-    $color6
-  );
+  // @include linear-gradient(
+  //   $color1,
+  //   $color2,
+  //   $color3,
+  //   $color4,
+  //   $color5,
+  //   $color6
+  // );
+
+  // @include linear-gradient-angular($angular-red, $angular-white);
 
   .zone {
     text-align: center;
@@ -45,4 +47,12 @@
     // border: 1px solid #bbb;
     transition: all 0.3s linear;
   }
+}
+
+.fa-angular {
+  @include linear-gradient-angular;
+  font-size: 6em;
+}
+
+.fa-node-js {
 }
