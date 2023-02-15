@@ -36,34 +36,28 @@
     // border: 1px solid #bbb;
     transition: all 0.3s linear;
   }
-}
 
-.fa-angular {
-  @include linear-gradient-angular;
-  font-size: 6em;
-}
+  .fa-angular {
+    @include linear-gradient-angular;
+  }
 
-.fa-node-js {
-  @include linear-gradient-node;
-  font-size: 6em;
-}
+  .fa-node-js {
+    @include linear-gradient-node;
+  }
 
-.html5 {
-  @include linear-gradient-html;
-  font-size: 6em;
-}
+  .fa-html5 {
+    @include linear-gradient-html;
+  }
 
-.fa-css3-alt {
-  @include linear-gradient-css;
-  font-size: 6em;
-}
+  .fa-css3-alt {
+    @include linear-gradient-css;
+  }
 
-.fa-sass {
-  @include linear-gradient-sass;
-  font-size: 6em;
-}
+  .fa-sass {
+    @include linear-gradient-sass;
+  }
 
-.fa-gitkraken {
-  @include linear-gradient-github;
-  font-size: 6em;
+  .fa-gitkraken {
+    @include linear-gradient-github;
+  }
 }
