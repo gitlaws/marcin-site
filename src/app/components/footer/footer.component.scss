@@ -1,54 +1,17 @@
 @import "src/styles/colors";
 @import "src/styles/breakPoints";
+@import "/src/styles/mixins";
 
 footer {
   margin-top: 20px;
-
-  // .social-media-container {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  background-color: $green;
-  color: #fffffe;
-  padding: 10px;
-
-  @media screen and (max-width: $tablet) {
+  h2 {
+    color: $quaternary-background;
     text-align: center;
-    grid-template-columns: 1fr;
   }
 
-  ul {
-    list-style: none;
-    display: grid;
-    grid-gap: 10px;
-    grid-auto-flow: column;
-    justify-items: center;
-    justify-self: center;
-
-    li {
-      font-size: 2em;
-      padding: 6px;
-      border-radius: 50%;
-      height: 48px;
-      width: 48px;
-      display: grid;
-      justify-content: center;
-      align-content: center;
-      transition: all 0.3s;
-
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-
-      a {
-        text-decoration: none;
-        color: #fffffe;
-      }
-    }
+  a {
+    position: absolute;
   }
-  // }
-
   .glitchy-social {
     // background: $angular-red;
     width: 100%;
@@ -66,32 +29,16 @@ footer {
     }
 
     .fab {
-      color: #fff;
+      // position: absolute;
+      color: $quaternary-background;
       font-size: 4rem;
       line-height: 90px;
     }
 
     &:focus .fab,
-    &:hover .fav {
+    &:hover .fab {
+      @include glitchfx();
       animation: glitchy 200ms infinite;
-    }
-
-    @keyframes glitchy {
-      0% {
-        text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
-      }
-      25% {
-        text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
-      }
-      50% {
-        text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
-      }
-      75% {
-        text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
-      }
-      100% {
-        text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
-      }
     }
   }
 
