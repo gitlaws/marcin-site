@@ -12,7 +12,8 @@ import { CourseRedirectComponent } from "./views/courses/components/course-redir
 import { CoursesComponent } from "./views/courses/courses.component";
 import { EmailSignupComponent } from "./views/home/components/email-signup/email-signup.component";
 import { HomeComponent } from "./views/home/home.component";
-import { SkillsComponent } from './views/skills/skills.component';
+import { SkillsComponent } from "./views/skills/skills.component";
+import { CarouselComponent } from "./views/carousel/carousel.component";
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SkillsComponent } from './views/skills/skills.component';
     FooterComponent,
     GithubComponent,
     SkillsComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
