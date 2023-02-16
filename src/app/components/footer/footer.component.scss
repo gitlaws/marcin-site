@@ -4,47 +4,93 @@
 footer {
   margin-top: 20px;
 
-  .social-media-container {
+  // .social-media-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background-color: $green;
+  color: #fffffe;
+  padding: 10px;
+
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+
+  ul {
+    list-style: none;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    background-color: $green;
-    color: #fffffe;
-    padding: 10px;
+    grid-auto-flow: column;
+    justify-items: center;
+    justify-self: center;
 
-    @media screen and (max-width: $tablet) {
-      text-align: center;
-      grid-template-columns: 1fr;
+    li {
+      font-size: 2em;
+      padding: 6px;
+      border-radius: 50%;
+      height: 48px;
+      width: 48px;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      a {
+        text-decoration: none;
+        color: #fffffe;
+      }
+    }
+  }
+  // }
+
+  .glitchy-social {
+    // background: $angular-red;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 33.33%;
+    text-align: center;
+
+    .btn {
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      position: relative;
     }
 
-    ul {
-      list-style: none;
-      display: grid;
-      grid-gap: 10px;
-      grid-auto-flow: column;
-      justify-items: center;
-      justify-self: center;
+    .fab {
+      color: #fff;
+      font-size: 4rem;
+      line-height: 90px;
+    }
 
-      li {
-        font-size: 2em;
-        padding: 6px;
-        border-radius: 50%;
-        height: 48px;
-        width: 48px;
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        transition: all 0.3s;
+    &:focus .fab,
+    &:hover .fav {
+      animation: glitchy 200ms infinite;
+    }
 
-        &:hover {
-          background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        a {
-          text-decoration: none;
-          color: #fffffe;
-        }
+    @keyframes glitchy {
+      0% {
+        text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+      }
+      25% {
+        text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+      }
+      50% {
+        text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+      }
+      75% {
+        text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+      }
+      100% {
+        text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
       }
     }
   }
