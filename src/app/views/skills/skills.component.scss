@@ -31,9 +31,9 @@
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 0 40px;
   // grid-column: 2 / span 2
   // grid-template-rows: 1fr;
-  padding: 0 400px;
   justify-items: center;
 
   .zone {
