@@ -4,12 +4,12 @@
 #main-container {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-gap: 10px;
+  // grid-gap: 10px;
 
   #home-container {
     display: grid;
     text-align: center;
-    color: #fffffe;
+    background-color: $happygreen;
     position: relative;
     grid-gap: 40px;
 
@@ -61,7 +61,7 @@
         text-align: left;
       }
 
-      #youtube {
+      #yawe {
         border-radius: 20px;
         background-color: $secondary-background;
         padding: 30px 20px;
@@ -87,53 +87,53 @@
         }
       }
 
-      #self-taught-or-not {
-        border-radius: 20px;
-        background-color: $secondary-background;
-        padding: 30px 20px;
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-gap: 20px;
-        align-items: center;
+      // #self-taught-or-not {
+      //   border-radius: 20px;
+      //   background-color: $secondary-background;
+      //   padding: 30px 20px;
+      //   display: grid;
+      //   grid-template-columns: auto 1fr;
+      //   grid-gap: 20px;
+      //   align-items: center;
 
-        @media screen and (max-width: $mobile) {
-          grid-template-columns: 1fr;
-        }
+      //   @media screen and (max-width: $mobile) {
+      //     grid-template-columns: 1fr;
+      //   }
 
-        #podcast-description {
-          display: grid;
-          grid-row-gap: 10px;
-        }
+      //   #podcast-description {
+      //     display: grid;
+      //     grid-row-gap: 10px;
+      //   }
 
-        img {
-          width: 120px;
-        }
-      }
+      //   img {
+      //     width: 120px;
+      //   }
+      // }
 
-      #courses {
-        border-radius: 20px;
-        background-color: $secondary-background;
-        padding: 30px 20px;
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-gap: 20px;
-        align-items: center;
+      // #courses {
+      //   border-radius: 20px;
+      //   background-color: $secondary-background;
+      //   padding: 30px 20px;
+      //   display: grid;
+      //   grid-template-columns: auto 1fr;
+      //   grid-gap: 20px;
+      //   align-items: center;
 
-        @media screen and (max-width: $mobile) {
-          grid-template-columns: 1fr;
-        }
+      //   @media screen and (max-width: $mobile) {
+      //     grid-template-columns: 1fr;
+      //   }
 
-        .fa-laptop-code {
-          color: $twitter-blue;
-          display: block;
-          font-size: 100px;
-        }
+      //   .fa-laptop-code {
+      //     color: $twitter-blue;
+      //     display: block;
+      //     font-size: 100px;
+      //   }
 
-        #courses-description {
-          display: grid;
-          grid-row-gap: 10px;
-        }
-      }
+      //   #courses-description {
+      //     display: grid;
+      //     grid-row-gap: 10px;
+      //   }
+      // }
     }
   }
 }
