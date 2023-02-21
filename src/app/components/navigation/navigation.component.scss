@@ -7,11 +7,12 @@ nav {
 
   ul {
     display: grid;
+    margin: 0;
     grid-template-columns: auto auto auto 1fr;
     grid-gap: 20px;
     padding: 15px 5px;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     @include box-shadow();
 
     li {
@@ -34,7 +35,8 @@ nav {
       }
 
       img {
-        width: 16px;
+        height: 24px;
+        width: 24px;
       }
 
       &:last-child {
