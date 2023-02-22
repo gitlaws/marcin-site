@@ -2,69 +2,6 @@
 @import "src/styles/breakPoints";
 @import "src/styles/_mixins";
 
-// nav {
-//   background-color: rgba(1, 1, 1, 0.9);
-//   color: #fffffe;
-
-//   ul {
-//     display: grid;
-//     margin: 0;
-//     grid-template-columns: auto auto auto 1fr;
-//     grid-gap: 20px;
-//     padding: 15px 5px;
-//     align-items: center;
-//     // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-//     @include box-shadow();
-
-//     li {
-//       color: #fffffe;
-//       display: inline-block;
-//       // font-weight: bold;
-//       // cursor: pointer;
-
-//       &.home-icon {
-//         display: grid;
-//         grid-template-columns: auto 1fr;
-//         align-items: center;
-//         padding-left: 15px;
-//         font-size: 16px;
-
-//         .highlight {
-//           color: $top;
-//           margin-left: 10px;
-//         }
-//       }
-
-//       img {
-//         height: 24px;
-//         width: 24px;
-//       }
-
-//       // &:last-child {
-//       //   justify-self: end;
-//       //   padding-right: 10px;
-//       // }
-
-//       a {
-//         text-decoration: none;
-//         color: #fffffe;
-//         // position: relative;
-//       }
-
-//       .fab.fa-discord {
-//         height: 24px;
-//         width: 24px;
-//       }
-//     }
-//   }
-// }
-
-// :host {
-//   ::ng-deep .fa-discord {
-//     color: $discord-white;
-//   }
-// }
-
 .grid {
   display: grid;
   color: $quaternary-background;
@@ -85,7 +22,7 @@
   }
 }
 
-.myname {
+.angular {
   align-items: center;
   text-decoration: none;
 }

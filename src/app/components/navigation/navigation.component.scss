@@ -3,7 +3,8 @@
 @import "src/styles/_mixins";
 
 nav {
-  background-color: rgba(1, 1, 1, 0.9);
+  background-color: $black;
+  @include box-shadow();
 
   ul {
     display: grid;
@@ -13,7 +14,6 @@ nav {
     padding: 15px 5px;
     align-items: center;
     // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    @include box-shadow();
 
     li {
       color: #fffffe;
@@ -48,8 +48,6 @@ nav {
         text-decoration: none;
         color: #fffffe;
         font-size: 24px;
-        // height: 24px;
-        // width: 24px;
       }
     }
   }
