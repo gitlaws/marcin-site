@@ -14,6 +14,7 @@ import { EmailSignupComponent } from "./views/home/components/email-signup/email
 import { HomeComponent } from "./views/home/home.component";
 import { SkillsComponent } from "./views/skills/skills.component";
 import { CarouselComponent } from "./views/carousel/carousel.component";
+import { TopnavComponent } from "./components/topnav/topnav.component";
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CarouselComponent } from "./views/carousel/carousel.component";
     GithubComponent,
     SkillsComponent,
     CarouselComponent,
+    TopnavComponent,
   ],
   imports: [
     BrowserModule,
