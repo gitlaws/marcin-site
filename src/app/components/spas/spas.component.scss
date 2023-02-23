@@ -11,6 +11,13 @@ h2 {
   padding: 20px;
 }
 
+h3 {
+  background-color: $button-text;
+  color: $quaternary-background;
+  text-align: center;
+  font-size: 16px;
+}
+
 // header {
 //   display: grid;
 //   background-color: $github-black;
