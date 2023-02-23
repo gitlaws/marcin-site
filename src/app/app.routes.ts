@@ -12,23 +12,23 @@ export const APP_ROUTES: Routes = [
     component: CoursesComponent,
   },
   {
-    path: "",
+    path: "Components",
     component: HomeComponent,
   },
   {
-    path: "",
+    path: "Directives",
     component: CoursesComponent,
   },
   {
-    path: "",
+    path: "Pipes",
     component: HomeComponent,
   },
   {
-    path: "",
+    path: "Services",
     component: CoursesComponent,
   },
   {
-    path: "",
+    path: "Other",
     component: HomeComponent,
   },
   {
