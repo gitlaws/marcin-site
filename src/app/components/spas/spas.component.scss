@@ -2,15 +2,22 @@
 @import "src/styles/breakPoints";
 @import "/src/styles/mixins";
 
+h2 {
+  color: $quaternary-background;
+  font-size: 16px;
+  text-align: center;
+}
+
 .spas-grid {
   display: grid;
+  align-items: start;
+  grid-auto-flow: column;
 }
 
 .zone {
   background-color: $color1;
-  align-items: start;
-
-  grid-auto-flow: column;
+  text-align: center;
+  align-self: center;
 }
 
 .zone:nth-child(odd) {
