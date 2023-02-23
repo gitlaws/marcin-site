@@ -17,7 +17,7 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: "Directives",
-    component: CoursesComponent,
+    component: HomeComponent,
   },
   {
     path: "Pipes",
@@ -25,7 +25,7 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: "Services",
-    component: CoursesComponent,
+    component: HomeComponent,
   },
   {
     path: "Other",
@@ -33,6 +33,6 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: "",
-    component: CoursesComponent,
+    component: HomeComponent,
   },
 ];
