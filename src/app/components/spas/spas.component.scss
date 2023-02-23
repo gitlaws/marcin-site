@@ -8,4 +8,11 @@
 
 .zone {
   background-color: $color1;
+  align-items: start;
+
+  grid-auto-flow: column;
+}
+
+.zone:nth-child(odd) {
+  background-color: $color5;
 }
