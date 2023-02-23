@@ -16,24 +16,9 @@ h3 {
   color: $quaternary-background;
   text-align: center;
   font-size: 16px;
+  // justify-items: center;
+  // align-items: center;
 }
-
-// header {
-//   display: grid;
-//   background-color: $github-black;
-//   color: $quaternary-background;
-//   //   grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
-//   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-//   ul {
-//     list-style-type: none;
-//     padding: 0;
-//   }
-
-//   li {
-//     border: 2px solid $background-color;
-//     text-align: center;
-//   }
-// }
 
 .item-routerlinks {
   display: grid;
@@ -53,8 +38,6 @@ h3 {
 
 .grid-container {
   display: grid;
-  //   grid-template-columns: repeat(autofit, 6, 1fr);
-  //   grid-template-columns: repeat(auto-fill, minmax(6, 1fr));
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 10px;
   background-color: $secondary-background;
