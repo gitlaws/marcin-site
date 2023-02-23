@@ -15,6 +15,7 @@ import { HomeComponent } from "./views/home/home.component";
 import { SkillsComponent } from "./views/skills/skills.component";
 import { CarouselComponent } from "./views/carousel/carousel.component";
 import { TopnavComponent } from "./components/topnav/topnav.component";
+import { SpasComponent } from './components/spas/spas.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { TopnavComponent } from "./components/topnav/topnav.component";
     SkillsComponent,
     CarouselComponent,
     TopnavComponent,
+    SpasComponent,
   ],
   imports: [
     BrowserModule,
