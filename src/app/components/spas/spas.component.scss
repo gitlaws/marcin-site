@@ -3,21 +3,28 @@
 @import "/src/styles/mixins";
 
 h2 {
+  background-color: $background-color;
+  //   color: $black;
   color: $quaternary-background;
   font-size: 16px;
   text-align: center;
 }
-
+//
 .spas-grid {
+  background-color: $secondary-background;
   display: grid;
-  align-items: start;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
   grid-auto-flow: column;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 10px;
 }
 
 .zone {
   background-color: $color1;
-  text-align: center;
-  align-self: center;
+  border: 4px;
 }
 
 .zone:nth-child(odd) {
