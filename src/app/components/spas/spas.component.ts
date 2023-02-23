@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-spas',
-  templateUrl: './spas.component.html',
-  styleUrls: ['./spas.component.scss']
+  selector: "app-spas",
+  templateUrl: "./spas.component.html",
+  styleUrls: ["./spas.component.scss"],
 })
-export class SpasComponent {
-
-}
+export class SpasComponent {}

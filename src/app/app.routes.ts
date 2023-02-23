@@ -7,45 +7,32 @@ export const APP_ROUTES: Routes = [
     path: "",
     component: HomeComponent,
   },
-  // {
-  //   path: 'courses',
-  //   component: CoursesComponent
-  // }
-
   {
-    path: "",
+    path: "courses",
+    component: CoursesComponent,
   },
   {
     path: "",
+    component: HomeComponent,
   },
   {
     path: "",
+    component: CoursesComponent,
   },
   {
     path: "",
+    component: HomeComponent,
   },
   {
     path: "",
+    component: CoursesComponent,
   },
   {
     path: "",
+    component: HomeComponent,
   },
   {
     path: "",
-  },
-  {
-    path: "",
-  },
-  {
-    path: "",
-  },
-  {
-    path: "",
-  },
-  {
-    path: "",
-  },
-  {
-    path: "",
+    component: CoursesComponent,
   },
 ];
