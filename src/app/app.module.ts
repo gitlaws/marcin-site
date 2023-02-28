@@ -8,30 +8,22 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { GithubComponent } from "./components/github-info/github-info.component";
 import { NavigationComponent } from "./components/navigation/navigation.component";
 import { TopOfPageComponent } from "./components/top-of-page/top-of-page.component";
-import { CourseRedirectComponent } from "./views/courses/components/course-redirect/course-redirect.component";
-import { CoursesComponent } from "./views/courses/courses.component";
-import { EmailSignupComponent } from "./views/home/components/email-signup/email-signup.component";
 import { HomeComponent } from "./views/home/home.component";
 import { SkillsComponent } from "./views/skills/skills.component";
-import { CarouselComponent } from "./views/carousel/carousel.component";
 import { TopnavComponent } from "./components/topnav/topnav.component";
-import { SpasComponent } from './components/spas/spas.component';
-import { CardComponent } from './components/card/card.component';
-import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
+import { SpasComponent } from "./components/spas/spas.component";
+import { CardComponent } from "./components/card/card.component";
+import { ComponentDocumentationComponent } from "./components/component-documentation/component-documentation.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     HomeComponent,
-    CoursesComponent,
-    EmailSignupComponent,
-    CourseRedirectComponent,
     TopOfPageComponent,
     FooterComponent,
     GithubComponent,
     SkillsComponent,
-    CarouselComponent,
     TopnavComponent,
     SpasComponent,
     CardComponent,
