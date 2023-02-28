@@ -4,10 +4,7 @@
 
 nav {
   background-color: $black;
-  .grid-container {
-    margin: auto;
-    width: 50%;
-  }
+
   ul {
     height: 48px;
     display: grid;
@@ -57,9 +54,8 @@ nav {
   @include box-shadow();
 }
 
-// @media screen and (max-width: 785px) {
-//   .grid-container {
-//     margin: auto;
-//     width: 50%;
-//   }
-// }
+@media screen and (max-width: 1160px) {
+  .nav-container {
+    min-width: 768px;
+  }
+}
